@@ -200,6 +200,9 @@ img{
         flex-direction: column;
         gap: 0vmin;
     }
+    h2{
+        font-size: 5vmin;
+    }
 }  
   @keyframes wave-animation {
       0% { transform: rotate( 0.0deg) }
