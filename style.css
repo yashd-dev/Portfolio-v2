@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    justify-content: flex-start;
+    align-content: space-between;
+    /* background-color: rgb(12, 12, 12); */
+    background-color: #1b1b1b;
+    padding-right: 10%;
+    padding-left: 4%;
+    padding-top: 5%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+h1{
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.5vmin;
+    font-size: 8vmin;
+    font-weight: 700;
+}
+#head1 {
+    color: #8fbcbb;
+}
+#head2{
+    color: #5e81ac;
+}
+#head3{
+    color: #81a1c1;
+}
+p {
+    font-size: 4vmin;
+    font-weight: 300;
+}
+
+/* Position the section tag in the center of the page */
+section {
+    position: relative;
+    margin-bottom: 0;
+}
+
+a,p.ofcard{
+    font-family: 'Space Grotesk', sans-serif;   
+    padding-top: 1.5vmin;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vmin;
+    font-weight: 400;
+    color: white;
+}
+a.card3{
+    font-size: 2.7vmin;
+}
+i{
+    max-width: 8vmin;
+    align-self: center;
+    padding-top: 3vmin;
+    padding: 2vmin;
+}
+hr{
+    height: 0.5%;
+    width: 70vw;
+    margin-left: 0;
+}
+#profilepic {
+    max-width: 15vmax;
+    border-radius: 10%;
+    border-color: #308b91;
+    border: 10vmax;
+}
+
+#first {
+    padding-top: 10%;
+}
+
+#text_pic {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    gap: 5vmin;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
+
+.card-list {
+    left: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding-right: 2.5rem;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+}
+img.card{
+    border-radius: 10%;
+    max-height: 11vw;
+}
+img{
+    object-fit: cover;
+}
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+    height: 45vmin;
+    min-width: 60vmin;
+    padding: 1.5rem;
+    background-clip: content-box;
+    background-color:#101616 ;
+    border-radius: 10%;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 45vmin;
+    min-width: 67vmin;
+    
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 3.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+.opp-wave{
+    animation-name: opp-wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 3.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.navbar{
+    float: right   ;
+}
+@keyframes fadeInAnimation {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        min-height: 90vh;
+    }
+    section.card-list{
+    min-height: 80vh;
+}
+}
+
+
+@media only screen and (max-width: 988px) {
+    body{
+        padding-top: 0%;
+    }
+    #text_pic {
+        flex-direction: column;
+        gap: 0vmin;
+    }
+}  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+
+  @keyframes opp-wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(-14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(8.0deg) }
+   30% { transform: rotate(-14.0deg) }
+   40% { transform: rotate(4.0deg) }
+   50% { transform: rotate(-10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
