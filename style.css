@@ -5,12 +5,10 @@ body {
     flex-grow: 4;
     justify-content: flex-start;
     align-content: space-between;
-    /* background-color: rgb(12, 12, 12); */
-    background-color: #1b1b1b;
     padding-right: 10%;
     padding-left: 4%;
     padding-top: 5%;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -20,21 +18,10 @@ h1{
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: 0.5vmin;
     font-size: 8vmin;
-    font-weight: 700;
-}
-#head1 {
+    font-weight: 500;
     color: #8fbcbb;
 }
-#head2{
-    color: #5e81ac;
-}
-#head3{
-    color: #81a1c1;
-}
-p {
-    font-size: 4vmin;
-    font-weight: 300;
-}
+
 
 /* Position the section tag in the center of the page */
 section {
@@ -137,7 +124,7 @@ img{
     min-width: 60vmin;
     padding: 1.5rem;
     background-clip: content-box;
-    background-color:#101616 ;
+    background-color:rgb(24, 24, 24) ;
     border-radius: 10%;
     transition: 0.3s ease-in-out;
 }
@@ -183,25 +170,45 @@ img{
 }
 
 @media only screen and (min-width: 768px) {
+    body{
+        background-color: #1b1b1b;
+        padding-bottom: 1%;
+    }
     section {
         min-height: 90vh;
     }
     section.card-list{
     min-height: 80vh;
-}
+    }
+    p {
+        font-size: 4vmin;
+        font-weight: 200;
+        color: E7E0C3;
+    }
+    h2{
+        font-size: 4vmin;
+    }
 }
 
 
 @media only screen and (max-width: 988px) {
     body{
         padding-top: 0%;
+        padding-right: 3%;
+        padding-bottom: 1%;
+        background-color: rgb(12, 12, 12);
     }
     #text_pic {
         flex-direction: column;
         gap: 0vmin;
     }
     h2{
-        font-size: 5vmin;
+        font-size: 4.5vmin;
+    }
+    p {
+        font-size: 4.5vmin;
+        font-weight: 200;
+        color: E7E0C3;
     }
 }  
   @keyframes wave-animation {
