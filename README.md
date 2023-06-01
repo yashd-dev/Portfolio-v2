@@ -4,7 +4,7 @@
 
 This is my current portfolio website. 
 
-#### Site Link : [yashd-dev-portfolio.netlify.app](yashd-dev-portfolio.netlify.app)
+#### Site Link : [yashd-dev-portfolio.netlify.app](yashd-dev.netlify.app)
 
 ### ❖ Contributing
 
