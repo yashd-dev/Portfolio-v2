@@ -19,8 +19,7 @@ h1{
     letter-spacing: 0.5vmin;
     font-size: 8vmin;
     font-weight: 500;
-    /* color: #8fbcbb; */
-    color: #00c896;
+    color: #8fbcbb;
 }
 
 
@@ -180,6 +179,9 @@ img{
     }
     section.card-list{
     min-height: 80vh;
+    }
+    h1{
+        color: #00c896;
     }
     p {
         font-size: 4vmin;
