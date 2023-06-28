@@ -1,101 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="content-language" content="en" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Yash Deshpande's amazing Portfolio" />
+		<meta
+			name="og:description"
+			content="Yash Deshpande's amazing Portfolio"
+		/>
+		<meta property="og:image" content="images/Site-Preview.png" />
+		<meta property="og:url" content="yashd-dev.netlify.app/" />
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="app.js"></script>
+		<link rel="icon" type="image/x-icon" href="images/logo4.svg?v=2" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Yash Deshpande's Portfolio</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-language" content="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yash Deshpande's amazing Portfolio"/>
-    <meta name="og:description" content="Yash Deshpande's amazing Portfolio"/>
-    <meta property="og:image" content="images/Site-Preview.png" />
-    <meta property="og:url" content="yashd-dev.netlify.app/">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/"/>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
-    <link rel="icon" type="image/x-icon" href="images/logo4.svg?v=2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Yash Deshpande's Portfolio</title>
+	<body>
+		<div id="particles-js"></div>
+		<section class="hidden" id="first">
+			<div id="text_pic">
+				<h1 id="head1">Helou I'm Yash <span class="wave">👋</span></h1>
+				<img
+					src="images/Yash.jpeg"
+					alt="My Profile photo"
+					id="profilepic"
+				/>
+			</div>
+			<hr />
 
-</head>
+			<p>
+				I'm a 18 year old student in Mumbai. Currently I have interests
+				in Linux (customizing it), attempting to making cool shit with C
+				and Python, and somewhat experimenting with web development.
+			</p>
+		</section>
+		<section class="hidden" id="section2">
+			<h1 id="head2">My projects 👀</h1>
+			<hr />
+			<p>Swipe/Scroll to know more</p>
 
-<body>    
-    <div id="particles-js"> </div>
-        <section class="hidden" id="first">
-            
-            <div id="text_pic">
-                <h1 id="head1">Helou I'm Yash <span class="wave">👋</span></h1>
-                <img src="images/Yash.jpeg" alt="My Profile photo" id="profilepic">
-            </div>
-            <hr>
+			<section class="card-list">
+				<article class="card">
+					<img src="images/RPS Screenshot.png" alt="RPS Screenshot" />
+					<a class="card3">RPS Game made with OpenCV and Mediapipe</a>
+					<div class="icons">
+						<a href="https://github.com/yashd-dev/RPS-using-OpenCv"
+							><i class="fal fa-brands fa-github fa-lg"></i
+						></a>
+					</div>
+				</article>
+				<article class="card">
+					<img
+						src="images/ChatAppPreview.jpeg"
+						alt="ChatApp Screenshot"
+						id="imgchat"
+					/>
+					<a class="card3"
+						>Chat Appplication made with Nextjs, Tailwind, DaisyUI,
+						Firebase and ChatEngine</a
+					>
+					<div class="icons">
+						<a href="https://github.com/Amazing-ChatApp"
+							><i class="fal fa-brands fa-github fa-lg"></i
+						></a>
+						<a href="https://chatapp-next.netlify.app/"
+							><i class="fal fa-solid fa-link fa-lg"></i
+						></a>
+					</div>
+				</article>
+				<article class="card">
+					<img src="images/Mediethics_Preview.png" alt="" />
+					<a>A Website For a Company</a>
+					<div class="icons">
+						<a
+							href="https://github.com/yashd-dev/MediEthics-Website"
+							><i class="fal fa-brands fa-github fa-lg"></i
+						></a>
+						<a href="https://mediethics-yashd.web.app"
+							><i class="fal fa-solid fa-link fa-lg"></i
+						></a>
+					</div>
+				</article>
+				<article class="card">
+					<img src="images/Yash D's Portfolio.png" alt="" />
+					<a>Pervious Portfolio Page</a>
+					<div class="icons">
+						<a href="https://github.com/yashd-dev/Portfolio"
+							><i class="fal fa-brands fa-github fa-lg"></i
+						></a>
+						<a href="https://yashd-dev.github.io/Portfolio/"
+							><i class="fal fa-solid fa-link fa-lg"></i
+						></a>
+					</div>
+				</article>
+			</section>
+		</section>
 
-            <p>I'm a 18 year old student in Mumbai.
-                Currently I have interests in Linux (customizing it), attempting to making cool shit with C and Python,
-                and somewhat experimenting with web development.</p>
+		<section class="hidden">
+			<h1 id="head3">Contact me <span class="opp-wave"> 🤙</span></h1>
+			<hr />
+			<div class="contact">
+				<p></p>
 
+				<h2>
+					My Github:
+					<a href="http://github.com/yashd-dev"
+						><i class="fal fa-brands fa-github fa-lg"></i></a
+					>&emsp;&emsp;
+				</h2>
+				<br />
+				<h2>
+					My Linkdin:
+					<a
+						href="https://www.linkedin.com/in/yash-deshpande-224431219/"
+						><i class="fal fa-brands fa-linkedin"></i
+					></a>
+				</h2>
+				<br />
+				<h2>
+					My Discord:
+					<a href="https://discordapp.com/users/353541288907505676"
+						><i class="fal fa-brands fa-discord fa-lg"></i
+					></a>
+				</h2>
+				<br />
+			</div>
+		</section>
 
-        </section>
-        <section class="hidden">
-            <h1 id="head2">My projects 👀</h1>
-            <hr>
-            <p>Swipe/Scroll to know more</p>
-
-            <section class="card-list">
-                <article class="card">
-                    <img src="images/RPS Screenshot.png" alt="RPS Screenshot">
-                    <a class="card3">RPS Game made with OpenCV and Mediapipe</a>
-                    <div class="icons">
-                        <a href="https://github.com/yashd-dev/RPS-using-OpenCv"><i class="fal fa-brands fa-github fa-lg"></i></a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/Yash D's Portfolio.png" alt="">
-                    <a>Pervious Portfolio Page</a>
-                    <div class="icons">
-                        <a href="https://github.com/yashd-dev/Portfolio"><i class="fal fa-brands fa-github fa-lg"></i></a>
-                        <a href="https://yashd-dev.github.io/Portfolio/"><i class="fal fa-solid fa-link fa-lg"></i></a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/Mediethics_Preview.png" alt="">
-                    <a>A Website For a Company</a>
-                    <div class="icons">
-                        <a href="https://github.com/yashd-dev/MediEthics-Website"><i class="fal fa-brands fa-github fa-lg"></i></a>
-                        <a href="https://mediethics-yashd.web.app"><i class="fal fa-solid fa-link fa-lg"></i></a>
-                    </div>
-                    
-                </article> 
-                
-            </section>
-        </section>
-
-        <section class="hidden">  
-            <h1 id="head3"> Contact me <span class="opp-wave"> 🤙</span></h1>
-            <hr>
-            <div class="contact">
-                <p></p>
-
-                <h2>My Github: <a href="http://github.com/yashd-dev"><i class="fal fa-brands fa-github fa-lg"></i></a>&emsp;&emsp;</h2>
-                <br>
-                <h2>My Linkdin: <a href="https://www.linkedin.com/in/yash-deshpande-224431219/"><i class="fal fa-brands fa-linkedin"></i></a></h2>
-                <br>
-                <h2>My Discord: <a href="https://discordapp.com/users/353541288907505676"><i class="fal fa-brands fa-discord fa-lg"></i></a></h2>
-                <br>
-
-            </div>
-            
-        </section>
-   
-        <!-- Import Particles.js and app.js files -->
-        <script src=
-        "particles.js">
-    </script>
-    <script src=
-        "app2.js">
-    </script>
-
-</body>
-
+		<!-- Import Particles.js and app.js files -->
+		<script src="particles.js"></script>
+		<script src="app2.js"></script>
+	</body>
 </html>
