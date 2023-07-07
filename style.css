@@ -41,7 +41,10 @@ p.ofcard {
 	color: white;
 }
 a.card3 {
-	font-size: 2.7vmin;
+	width: 25ch;
+	align-items: center;
+	justify-content: center;
+	margin-inline: auto;
 }
 i {
 	max-width: 8vmin;
@@ -129,7 +132,7 @@ img {
 	position: relative;
 	flex-direction: column;
 
-	height: 45vmin;
+	height: 50vmin;
 	min-width: 60vmin;
 	padding: 1.5rem;
 	background-clip: content-box;
@@ -139,8 +142,8 @@ img {
 }
 
 .card:hover {
-	height: 45vmin;
-	min-width: 67vmin;
+	height: 48vmin;
+	min-width: 62vmin;
 }
 .wave {
 	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -290,9 +293,4 @@ img {
 	z-index: -10;
 	top: 0;
 	left: 0;
-}
-
-#imgchat{
-    padding-top: 4%;
-    padding-bottom: 2%;
 }
